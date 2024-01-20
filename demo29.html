@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>JAVACRIPT27</title>
+        <script>
+            // map object - foreach method
+            const mapobject1=new Map()
+            mapobject1.set("id",123)
+            mapobject1.set("name","klef")
+            mapobject1.set(1,100)
+            document.writeln("map object1 size:"+mapobject1.size+"</br>")
+            document.writeln(" <u>Display Map object1 based on values</u></br>")
+            mapobject1.forEach(
+                (v)=>{document.writeln(v+"</br>")
+            }
+            )
+
+            document.writeln("<u> Displaying the map object1 based on keys and values</u></br>")
+            mapobject1.forEach(
+                (v,k)=>{
+                    document.writeln(k+":"+v+"</br>")
+                }
+            )
+
+            const mapobject2 = new Map([["id",123],["name","klef"]])    // parameterized constructor
+            document.writeln("The size of the mapobject2 is size:"+mapobject2.size+"</br>")
+
+            document.writeln(" <u>Display Map object1 based on values</u></br>")
+            mapobject2.forEach( (v)=> document.writeln(v+"</br>"))
+
+            document.writeln("<u> Displaying the map object2 based on keys and values</u></br>")
+            const d=(v,k) => document.writeln(k+":"+v+"</br>")
+           mapobject2.forEach(d) // d is call back
+
+        </script>
+
+    </head>
+</html>

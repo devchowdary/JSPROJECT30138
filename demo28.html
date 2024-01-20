@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>JAVACRIPT28</title>
+        <script>
+            // Map object - Key value pair
+            const demomap = new Map()
+            demomap.set("id",101)
+            demomap.set("Name","Mswd")
+            demomap.set("age",20.12)
+            demomap.set("status",true)
+            demomap.set("Name","klef")   // duplicate key is -mswd will updated to  klef 
+            
+            document.writeln("Map size is= "+demomap.size+"</br>")
+            document.writeln("The Type of the Map is = "+typeof(demomap)+"</br>")
+            document.writeln(demomap.get("id")+"</br>")
+            document.writeln(demomap.get("city")+"</br>")  // the output is undefined because the key is not there so its return undefined
+            document.writeln(demomap.has("id")+"</br>")   // it returns true because the key is available
+            document.writeln(demomap.has("city")+"</br>") // it returns false because the city is not there in the given data
+            document.writeln(demomap.delete("status")+"</br>") //it returns true because the status key is there so it deleted the status keyword 
+            document.writeln("The size of the updated map is: "+demomap.size+"</br>")
+            document.writeln("<u>Display Map using for of loop</u></br>")
+            for(let i of demomap.keys())
+            {
+                document.writeln(i+"</br>")
+            }
+
+            document.writeln("</br>")
+            document.writeln("<u>Printing the values in the demomap</u></br>")
+            for(let k of demomap.values())
+            {
+                document.writeln("The value is : "+k+"</br>")
+            }
+
+
+            document.writeln("<u>Printing the values based on the keys</u></br>")
+            for(const key of demomap.keys())
+            {
+                document.writeln(demomap.get(key)+"</br>")
+            }
+
+
+            document.writeln("<u>display map keys and values</u></br>")
+            for(let [k,v] of demomap.entries())
+            {
+                document.writeln(k+": "+v+"</br>")
+            }
+            
+            demomap.clear()
+        </script>
+    </head>
+</html>

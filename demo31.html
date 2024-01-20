@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>JAVACRIPT31</title>
+        <script>
+            // Templatr Literal
+            // `` back tick
+            const name="klef"
+            document.writeln(`<b>HI ${name}</b></br>`)
+
+            // spread operator
+
+            const a=[10,23,45,56]
+            const b=[...a,30,40]
+            document.writeln("a= "+a+"</br>")
+            document.writeln("b= "+b+"</br>")
+
+
+            const x=[12,23,33]
+            const y=[23,54,65,44]
+            const z=[...x,...y]
+            document.writeln("The X array Is X: "+x+"</br>")
+            document.writeln("The Y array is y : "+y+"</br>")
+            document.writeln("The Z array is Z : "+"["+z+"]"+"</br>")
+            
+
+            // destructuring Assignment
+            const names=[10,20,"MSWD","SDP",30.23]
+            const [i,j,k,l]=names
+            document.writeln("I = "+i+"</br>")
+            document.writeln("J = "+j+"</br>")
+            document.writeln("K = "+k+"</br>")
+            document.writeln("L = "+l+"</br>")
+            
+            const [p,q] = names
+            document.writeln("P = "+p+"</br>")
+            document.writeln("Q = "+q+"</br>")
+
+            const v1="kluniversity"
+            const v2=[...v1]
+            document.writeln("v1 : "+v1+"</br>")
+            document.writeln("V2 : "+v2+"</br>")
+        </script>
+    </head>
+</html>

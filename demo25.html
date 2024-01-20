@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>JAVASCRIPT25</title>
+        <script>
+            // Arrow Function Demo
+            const sum =(a,b) => a+b
+            document.writeln("output ="+sum(23.5,30.5)+"</br>")
+
+
+            const mul=(a,b) =>{
+                let result = a*b
+                return result;
+            }
+            document.writeln("The output is = "+mul(32,20)+"</br>")
+
+            let num=(n) =>
+            {
+                if(n%2==0)
+                {
+                    return true;
+                }
+                else{
+                    return false;
+
+                }
+            }
+            const input =18 //static variable
+            if(num(input))
+            document.writeln(input+" is EVEN")
+            else
+            document.writeln(input+" is ODD")
+        </script>
+
+    </head>
+</html>
